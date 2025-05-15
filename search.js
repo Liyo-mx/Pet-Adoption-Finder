@@ -39,34 +39,6 @@ function saveSearchTerm(term){
 saveSearchTerm()
 
 
-// //apply filters
-// function applyFilters(){
-//     const type=document.getElementById('typeFilter');
-//     const ageRange=document.getElementById('ageFilter');
-//     const gender=document.getElementById('genderFilter');
-
-//     const filtered=pets.filter(pet=>{
-//         const age=pet.age;
-
-//         const typeMatch=type==="pet"|| pet.pet===type;
-//         const genderMatch= gender==='gender'|| pet.gender===gender;
-
-//         let ageMatch=false;
-//         if(ageRange==='age'){
-//             ageMatch=true
-//         }else if(ageRange==='1-3yrs old'){
-//             ageMatch= age>=1 && age<=3;
-//         }else if(ageRange==='4-6yrs old'){
-//             ageMatch= age>=4 && age<=6;
-//         }else if(ageRange==='6+yrs old'){
-//             ageMatch=age>=6;
-//         }
-//         return typeMatch && genderMatch && ageMatch;
-//     });
-//     applyFilters(filtered);
-// }
-
-
 
 
 

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption Finder</title>
+    <link  rel="stylesheet" href="style.css">
+    
+
+
+</head>
+<body class="light">
+    <div class="container">
+        <div>
+            <h1>🐶🐱Pet Adoption Finder</h1>
+            <button class="btn" id="themeToggle">Toggle Theme</button>
+        </div>
+        <!-- search bar -->
+        
+            <input class="searchbar" id="search-input" type="search" placeholder="Enter Pet Name" aria-label="Search">
+            <button class="btn" type="submit" >Search</button>
+        
+
+        <!-- filter
+        <div class="filterbox">
+        <form name="filter" id="filter" >
+            Filter By: <select name="subject" id="typeFilter">
+              <option class="dropbtn" value="pet" selected="selected">Dog</option>
+              <option class="dropbtn" value="pet" selected="selected">Cat</option>
+              <option class="dropbtn" value="pet" selected="selected">Pet</option>
+            </select>
+          
+           <select name="age" id="ageFilter">
+              <option class="dropbtn"  value="age" selected="selected">1-3yrs old</option>
+              <option class="dropbtn"  value="age" selected="selected">4-6yrs old</option>
+              <option class="dropbtn"  value="age" selected="selected">6+yrs old</option>
+              <option class="dropbtn"  value="age" selected="selected">Age</option>
+            </select>
+         
+            <select name="gender" id="genderFilter">
+              <option class="dropbtn"  value="gender" selected="selected">Female</option>
+              <option class="dropbtn"  value="gender" selected="selected">Male</option>
+              <option class="dropbtn"  value="gender" selected="selected">Gender</option>
+            </select>
+           
+          </form> -->
+                  <!-- container for for generated adoption cards -->
+        <div  class="subContainer" id="resultsContainer"></div>
+       
+        </div>
+        
+
+      
+       <script src="greet.js"></script>
+        <script src="data.js"></script>
+        <script src="theme.js"></script>
+        <script src="timer.js"></script>
+        <script src="search.js"></script>
+</body>
+</html>

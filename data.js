@@ -135,55 +135,6 @@ function renderPets(pets){
 renderPets(pets);
 
 
-//apply filters
-function applyFilters(){ 
-
-//main filter
-let filtered=pets;
-//pet type
-const type=document.getElementById('typeFilter');
-filtered=searchType(filtered, type);
-//pet gender
-const gender=document.getElementById('genderFilter');
-filtered=searchGender(filtered, gender);
-//pet age
-const ageRange=document.getElementById('ageFilter');
-filtered=searchAge(filtered, ageRange)
-
-
-
-//Pet type filter
-function searchType(pets, type){
-    if(!type) return pets;
-
-    return pets.filter(pet=>pet.pet=== type)
-}
-//pet gender filter
-function searchGender(pets, gender){
-    if(!gender) return pets;
-
-    return pets.filter(pet=> pet.gender=== gender)
-}
-
-//pet age filter
-function searchAge(pets, ageRange){
-
-        
-        if(ageRange==='Age'){
-            return pets;
-        }else if(ageRange==='1-3yrs old'){
-            return pets.filter(pet=>pet.age>=1 && pet.age<=3);
-        }else if(ageRange==='4-6yrs old'){
-            return pets.filter(pet=>pet.age>=4 && pet.age<=6);
-        }else if(ageRange==='6+yrs old'){
-            return pets.filter(pet=>pet.age>=6);
-        } else {
-            console.log('something wrong chief')
-        }
-        
-    };
-    renderPets(filtered);
-}
 
 
 
